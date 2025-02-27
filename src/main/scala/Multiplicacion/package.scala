@@ -7,36 +7,34 @@ package object Multiplicacion {
     else PeasantAlgorithm(a / 2, b + b) + b
   }
 
-  def PeasantAlgorithmIt(a: Int, b: Int): Int = {
-    var x = a
-    var y = b
-    var result = 0
-
-    while (x > 0) {
-      if (x % 2 != 0) result += y
-      x /= 2
-      y += y
-    }
-    result
+  def PeasantAlgorithmIt(a: Int, b: Int, count: Int): Int = {
+    if (a == 0) count
+    else if (a % 2 == 0) PeasantAlgorithmIt(a / 2, b + b, count)
+    else PeasantAlgorithmIt(a / 2, b + b, count + b)
   }
+
+  def PeasantItCall(a: Int, b: Int): Int = { PeasantAlgorithmIt(a, b, 0)}
 
   def splitMultiply(a: Int, b: Int): Int = {
-      val aStr = a.abs.toString
-      val bStr = a.abs.toString
-      var result = 0
-      val m = math.max(aStr.length, bStr.length) / 2
+    if (a < 10 || b < 10) a * b
 
-      val divider = math.pow(10, math.max(aStr.length, bStr.length) - m).toInt
+    else{
+      val m = (math.max(a.toString.length, b.toString.length) + 1) / 2
+      val divider = math.pow(10, m).toInt
 
-      val x = a / divider
-      val y = a % divider
+      val (x, y) = (a / divider, a % divider)
+      val (z, w) = (b / divider, b % divider)
 
-      val z = b / divider
-      val w = b % divider
-    
-      x
+      val p1 = splitMultiply(x, z)
+      val p2 = splitMultiply(y, w)
 
+      val p3 = splitMultiply(x,w) + splitMultiply(y,z)
+
+      println(s"a=$a, b=$b, m=$m, x=$x, y=$y, z=$z, w=$w, p1=$p1, p2=$p2, p3=$p3")
+
+      p1 * math.pow(10, 2 * m).toInt + p3 * math.pow(10, m).toInt + p2
     }
   }
+}
 
   
