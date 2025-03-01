@@ -29,8 +29,6 @@ package object Multiplicacion {
       val p2 = splitMultiply(y, w)
       val p3 = splitMultiply(x,w) + splitMultiply(y,z)
 
-      println(s"a=$a, b=$b, m=$m, x=$x, y=$y, z=$z, w=$w, p1=$p1, p2=$p2, p3=$p3")
-
       p1 * math.pow(10, 2 * m).toInt + p3 * math.pow(10, m).toInt + p2
     }
   }
@@ -47,8 +45,6 @@ package object Multiplicacion {
       val p1 = fastMultiply(x, z)
       val p2 = fastMultiply(y, w)
       val p3 = (p1 + p2) - fastMultiply(x - y, z - w)
-
-      println(s"a=$a, b=$b, m=$m, x=$x, y=$y, z=$z, w=$w, p1=$p1, p2=$p2, p3=$p3")
 
       p1 * math.pow(10, 2 * m).toInt + p3 * math.pow(10, m).toInt + p2
     }
