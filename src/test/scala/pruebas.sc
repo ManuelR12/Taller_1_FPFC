@@ -19,16 +19,16 @@ PeasantAlgorithmIt(8492, 326) // 2768392
 //Split algorithm
 println("--SPLIT ALGORIHM--")
 splitMultiply(32484, 47382)  // 1539156888
-splitMultiply(3243, 100210) // 324981030
-splitMultiply(1271, 18277) // 23230067
+splitMultiply(32434, 17021) // 552059114
+splitMultiply(8271, 1827) // 15111117
 splitMultiply(9, 21) // 189
 splitMultiply(6371, 82712) // 526958152
 
 //Fast algorithm (Karatsuba)
 println("--FAST ALGORITHM--")
 fastMultiply(8231, 1271) // 10461601
-fastMultiply(78128, 838) // 65471264
+fastMultiply(78128, 23838) // 1862415264
 fastMultiply(8, 76) // 608
-fastMultiply(812, 2) // 1624
+fastMultiply(812, 21245) // 17.250.940
 fastMultiply(8612, 6127) // 52765724
 
