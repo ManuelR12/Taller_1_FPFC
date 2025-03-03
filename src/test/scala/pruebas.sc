@@ -29,6 +29,6 @@ println("--FAST ALGORITHM--")
 fastMultiply(8231, 1271) // 10461601
 fastMultiply(78128, 23838) // 1862415264
 fastMultiply(8, 76) // 608
-fastMultiply(812, 21245) // 17.250.940
+fastMultiply(812, 21245) // 17250940
 fastMultiply(8612, 6127) // 52765724
 

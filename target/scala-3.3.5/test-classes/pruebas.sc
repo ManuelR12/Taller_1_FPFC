@@ -19,7 +19,7 @@ PeasantAlgorithmIt(8492, 326) // 2768392
 //Split algorithm
 println("--SPLIT ALGORIHM--")
 splitMultiply(32484, 47382)  // 1539156888
-splitMultiply(32434, 17021) // 324981030
+splitMultiply(32434, 17021) // 552059114
 splitMultiply(8271, 1827) // 15111117
 splitMultiply(9, 21) // 189
 splitMultiply(6371, 82712) // 526958152
