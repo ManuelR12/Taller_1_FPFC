@@ -24,10 +24,11 @@ splitMultiply(1271, 18277) // 23230067
 splitMultiply(9, 21) // 189
 splitMultiply(6371, 82712) // 526958152
 
+//Fast algorithm (Karatsuba)
 println("--FAST ALGORITHM--")
-fastMultiply(8231, 12714) // 105793194
+fastMultiply(8231, 1271) // 10461601
 fastMultiply(78128, 838) // 65471264
 fastMultiply(8, 76) // 608
 fastMultiply(812, 2) // 1624
-fastMultiply(8612, 61278) // 527726136
+fastMultiply(8612, 6127) // 52765724
 
