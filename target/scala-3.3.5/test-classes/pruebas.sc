@@ -3,7 +3,7 @@ import Multiplicacion._
 //Peasant algorithm con recursion lineal
 println("--PEASANT ALGORITHM (RECURSIVE)--")
 PeasantAlgorithm(928, 1783)  // 1654624
-PeasantAlgorithm(7, 3)
+PeasantAlgorithm(14, 382) // 5348
 PeasantAlgorithm(324, 2030) // 657720
 PeasantAlgorithm(2145, 3233) // 6926985
 PeasantAlgorithm(122, 11) // 1342
@@ -29,6 +29,6 @@ println("--FAST ALGORITHM--")
 fastMultiply(8231, 1271) // 10461601
 fastMultiply(78128, 23838) // 1862415264
 fastMultiply(8, 76) // 608
-fastMultiply(812, 21245) // 17.250.940
+fastMultiply(812, 21245) // 17250940
 fastMultiply(8612, 6127) // 52765724
 

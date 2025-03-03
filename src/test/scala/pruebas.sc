@@ -3,7 +3,7 @@ import Multiplicacion._
 //Peasant algorithm con recursion lineal
 println("--PEASANT ALGORITHM (RECURSIVE)--")
 PeasantAlgorithm(928, 1783)  // 1654624
-PeasantAlgorithm(7, 3)
+PeasantAlgorithm(14, 382) // 5348
 PeasantAlgorithm(324, 2030) // 657720
 PeasantAlgorithm(2145, 3233) // 6926985
 PeasantAlgorithm(122, 11) // 1342
